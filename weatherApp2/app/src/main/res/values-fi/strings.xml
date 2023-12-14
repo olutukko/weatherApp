@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Main Activity strings -->
+    <string name="app_name">Sääsovellus2</string>
+    <string name="city">Kaupunki</string>
+    <string name="feels_like">0</string>
+    <string name="humidity">0</string>
+    <string name="humidity_header">ilman kosteus:</string>
+    <string name="settings">Asetukset</string>
+    <string name="sunrise_header">Auringonnousu:</string>
+    <string name="sunrise">0:00</string>
+    <string name="sunset_header">Auringonlasku:</string>
+    <string name="sunset">0:00</string>
+    <string name="max_temp_header">maksimi lämpötila:</string>
+    <string name="min_temp_header">minimi lämpötila:</string>
+    <string name="min_temp">0</string>
+    <string name="max_temp">0</string>
+    <string name="temp">0</string>
+    <string name="weather_icon">sääsymboli</string>
+    <string name="weather">sää</string>
+    <string name="windspeed">0</string>
+
+    <!-- Settings activity strings -->
+    <string name="settings_back_button">Takaisin</string>
+    <string name="settings_wind_speed">Tuulen nopeus</string>
+    <string name="settings_header">Asetukset</string>
+    <string name="settings_clock_header">Kello</string>
+    <string name="settings_temperature_header">Lämpötila</string>
+    <string name="settings_celsius">°C</string>
+    <string name="settings_fahrenheit">°F</string>
+    <string name="settings_24h_clock">24h</string>
+    <string name="settings_12h_clock">12h</string>
+    <string name="settings_windspeed_mph">mph</string>
+    <string name="settings_windspeed_kmh">km/h</string>
+
+    <!-- Units -->
+    <string name="temperature_unit_celsius">°C</string>
+    <string name="temperature_unit_fahrenheit">°F</string>
+    <string name="speed_unit_mps">m/s</string>
+    <string name="speed_unit_mph">mph</string>
+    <string name="humidity_unit">%</string>
+    <string name="temperature_format">%d %s</string>
+    <string name="speed_format">%d %s</string>
+    <string name="humidity_format">%d %s</string>
+
+</resources>
+

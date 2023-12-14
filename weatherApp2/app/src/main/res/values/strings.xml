@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Main Activity strings -->
+    <string name="app_name">weatherApp2</string>
+    <string name="city">City</string>
+    <string name="feels_like">0</string>
+    <string name="humidity">0%</string>
+    <string name="humidity_header">humidity:</string>
+    <string name="settings">Settings</string>
+    <string name="sunrise_header">Sunrise:</string>
+    <string name="sunrise">0:00</string>
+    <string name="sunset_header">Sunset:</string>
+    <string name="sunset">0:00</string>
+    <string name="max_temp_header">max temp:</string>
+    <string name="min_temp_header">min temp:</string>
+    <string name="min_temp">0</string>
+    <string name="max_temp">0</string>
+    <string name="temp">0</string>
+    <string name="weather_icon">weather_icon</string>
+    <string name="weather">weather</string>
+    <string name="windspeed">0</string>
+
+    <!-- Settings activity strings -->
+    <string name="settings_back_button">Back</string>
+    <string name="settings_wind_speed">Wind speed</string>
+    <string name="settings_header">Settings</string>
+    <string name="settings_clock_header">Clock</string>
+    <string name="settings_temperature_header">Temperature</string>
+    <string name="settings_celsius">°C</string>
+    <string name="settings_fahrenheit">°F</string>
+    <string name="settings_24h_clock">24h</string>
+    <string name="settings_12h_clock">12h</string>
+    <string name="settings_windspeed_mph">mph</string>
+    <string name="settings_windspeed_kmh">km/h</string>
+
+    <!-- Units -->
+    <string name="temperature_unit_celsius">°C</string>
+    <string name="temperature_unit_fahrenheit">°F</string>
+    <string name="speed_unit_mps">m/s</string>
+    <string name="speed_unit_mph">mph</string>
+    <string name="humidity_unit">%</string>
+    <string name="temperature_format">%d %s</string>
+    <string name="speed_format">%d %s</string>
+    <string name="humidity_format">%d %s</string>
+
+</resources>

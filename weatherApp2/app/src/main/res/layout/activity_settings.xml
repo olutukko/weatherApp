@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_header"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_back_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <TextView
+        android:id="@+id/temperatureSettingsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/settings_temperature_header"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/temperatureSwitch"
+        app:layout_constraintEnd_toEndOf="@+id/fahrenheitTextView"
+        app:layout_constraintStart_toStartOf="@+id/celsiusTextView" />
+
+    <TextView
+        android:id="@+id/clockSettingsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/settings_clock_header"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/clockSwitch"
+        app:layout_constraintEnd_toEndOf="@+id/hour12TextView"
+        app:layout_constraintStart_toStartOf="@+id/hour24TextView" />
+
+    <TextView
+        android:id="@+id/windSpeedSettingsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/settings_wind_speed"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/speedSwitch"
+        app:layout_constraintEnd_toEndOf="@+id/mphTextView"
+        app:layout_constraintStart_toStartOf="@+id/kmhTextView" />
+
+    <TextView
+        android:id="@+id/celsiusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/settings_celsius"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/temperatureSwitch"
+        app:layout_constraintTop_toBottomOf="@+id/temperatureSettingsTextView" />
+
+    <TextView
+        android:id="@+id/kmhTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/settings_windspeed_kmh"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/speedSwitch"
+        app:layout_constraintTop_toBottomOf="@+id/windSpeedSettingsTextView" />
+
+    <TextView
+        android:id="@+id/hour24TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/settings_24h_clock"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/clockSwitch"
+        app:layout_constraintTop_toBottomOf="@+id/clockSettingsTextView" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/temperatureSwitch"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.311" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/speedSwitch"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/clockSwitch"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.701" />
+
+    <TextView
+        android:id="@+id/fahrenheitTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/settings_fahrenheit"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/temperatureSwitch"
+        app:layout_constraintTop_toBottomOf="@+id/temperatureSettingsTextView" />
+
+    <TextView
+        android:id="@+id/mphTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/settings_windspeed_mph"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/speedSwitch"
+        app:layout_constraintTop_toBottomOf="@+id/windSpeedSettingsTextView" />
+
+    <TextView
+        android:id="@+id/hour12TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/settings_12h_clock"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/clockSwitch"
+        app:layout_constraintTop_toBottomOf="@+id/clockSettingsTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
